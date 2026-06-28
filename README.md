@@ -1,16 +1,16 @@
 # Infrastructure Monitoring and Analytics Platform
 
-Documentation-only case study for a mobile-first internal monitoring and diagnostics platform built for operational infrastructure teams.
+Documentation for a mobile-first internal monitoring and diagnostics platform built for operational infrastructure teams.
 
-> Proprietary code and internal data are not included. This repository summarizes architecture, ownership, system design, and sanitized implementation details.
+> Proprietary code and internal data are not included. This repository documents the architecture, system design, ownership boundaries, and sanitized implementation details.
 
 ## Summary
 
-I owned and delivered an internal software product that unified infrastructure telemetry, KPI dashboards, alarm workflows, forecasting, anomaly detection, root-cause analysis, and AI-assisted investigation into one operator-facing system.
+The platform unified infrastructure telemetry, KPI dashboards, alarm workflows, forecasting, anomaly detection, root-cause analysis, and assistant-supported investigation in one operator-facing system.
 
-The work is best understood as a software systems and operational analytics platform, not as a telecom-only dashboard. The transferable engineering value is in backend services, data pipelines, analytics serving, monitoring workflows, and productized diagnostic tooling.
+The engineering scope covered backend services, data pipelines, analytics serving, monitoring workflows, and productized diagnostic tooling.
 
-## Confirmed Scale
+## Scale
 
 - 1,500+ distributed infrastructure endpoints
 - 60+ operational KPIs
@@ -46,22 +46,16 @@ flowchart LR
 - Forecasting and anomaly detection outputs connected to operator workflows
 - Root-cause analysis summaries and ranked probable causes
 
-## Engineering Ownership
+## Engineering Scope
 
-I owned the platform end to end:
-
-- ingestion pipeline design
-- Spark/Airflow processing
+- Ingestion pipeline design
+- Spark and Airflow processing
 - Elasticsearch indexing and query patterns
-- backend API design
-- dashboard and mobile workflow integration
-- forecasting and anomaly workflow integration
+- Backend API design
+- Dashboard and mobile workflow integration
+- Forecasting and anomaly workflow integration
 - RCA and assistant workflow integration
-- delivery of the final internal product
-
-## Recruiter Signal
-
-This project demonstrates production-oriented software systems work across backend services, data pipelines, mobile product delivery, operational analytics, and reliability-focused internal tooling.
+- Internal product delivery
 
 ## Tech Stack
 
