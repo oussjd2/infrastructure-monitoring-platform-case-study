@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660" role="img" aria-labelledby="title desc">
+<title id="title">Platform architecture</title><desc id="desc">Conceptual system view · processing, serving, and application responsibilities</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#647875"/></marker></defs>
+<rect width="1120" height="660" rx="18" fill="#f7f7f2"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="40" y="50" font-size="25" font-weight="700" fill="#182d2d">Platform architecture</text>
+<text x="40" y="79" font-size="15" fill="#516765">Conceptual system view · processing, serving, and application responsibilities</text>
+<rect x="40" y="125" width="230" height="90" rx="12" fill="#fff" stroke="#bacac4"/>
+<text x="58" y="155" font-size="18" font-weight="700" fill="#183c38">Hourly telemetry</text>
+<text x="58" y="182" font-size="15" fill="#465e5a">Infrastructure KPI records</text>
+<rect x="330" y="125" width="320" height="90" rx="12" fill="#e5efec" stroke="#bacac4"/>
+<text x="348" y="155" font-size="18" font-weight="700" fill="#183c38">Python / PySpark</text>
+<text x="348" y="182" font-size="15" fill="#465e5a">Ingestion and transformations</text>
+<rect x="330" y="265" width="320" height="110" rx="12" fill="#e5efec" stroke="#bacac4"/>
+<text x="348" y="295" font-size="18" font-weight="700" fill="#183c38">Elasticsearch</text>
+<text x="348" y="322" font-size="15" fill="#465e5a">KPI history and aggregations</text>
+<text x="348" y="345" font-size="15" fill="#465e5a">Anomalies and RCA outputs</text>
+<rect x="40" y="265" width="230" height="110" rx="12" fill="#fff" stroke="#bacac4"/>
+<text x="58" y="295" font-size="18" font-weight="700" fill="#183c38">Airflow</text>
+<text x="58" y="322" font-size="15" fill="#465e5a">Schedule processing</text>
+<text x="58" y="345" font-size="15" fill="#465e5a">Retries and checkpoints</text>
+<rect x="710" y="125" width="370" height="110" rx="12" fill="#fff" stroke="#bacac4"/>
+<text x="728" y="155" font-size="18" font-weight="700" fill="#183c38">Diagnostic workflows</text>
+<text x="728" y="182" font-size="15" fill="#465e5a">Forecasting, anomalies, and RCA</text>
+<text x="728" y="205" font-size="15" fill="#465e5a">Outputs connected to investigation</text>
+<rect x="710" y="285" width="370" height="90" rx="12" fill="#fff" stroke="#bacac4"/>
+<text x="728" y="315" font-size="18" font-weight="700" fill="#183c38">MongoDB</text>
+<text x="728" y="342" font-size="15" fill="#465e5a">Users, rules, and metadata</text>
+<rect x="330" y="435" width="320" height="95" rx="12" fill="#e5efec" stroke="#bacac4"/>
+<text x="348" y="465" font-size="18" font-weight="700" fill="#183c38">FastAPI</text>
+<text x="348" y="492" font-size="15" fill="#465e5a">Protected APIs and integration</text>
+<rect x="710" y="435" width="370" height="95" rx="12" fill="#fff" stroke="#bacac4"/>
+<text x="728" y="465" font-size="18" font-weight="700" fill="#183c38">Flutter application</text>
+<text x="728" y="492" font-size="15" fill="#465e5a">Monitoring and investigation</text>
+<text x="728" y="515" font-size="15" fill="#465e5a">Assistant access</text>
+<path d="M270 170 H330" fill="none" stroke="#647875" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M490 215 V265" fill="none" stroke="#647875" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M650 170 H710" fill="none" stroke="#647875" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M895 235 V250 H670 V320 H650" fill="none" stroke="#647875" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M155 265 V240 H310 V190 H330" fill="none" stroke="#647875" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<path d="M270 295 H300 V110 H895 V125" fill="none" stroke="#647875" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<path d="M490 375 V435" fill="none" stroke="#647875" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M895 375 V405 H610 V435" fill="none" stroke="#647875" stroke-width="2"  marker-end="url(#arrow)"/>
+<path d="M650 480 H710" fill="none" stroke="#647875" stroke-width="2"  marker-end="url(#arrow)"/>
+<text x="40" y="635" font-size="14" fill="#516765">Solid: data / application connections   ·   Dashed: orchestration   ·   Grouped view, not deployment topology</text>
+</g></svg>
